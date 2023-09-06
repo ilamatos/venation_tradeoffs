@@ -23,8 +23,8 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/ilamatos/xylem_implosion_safety">
-    <img src="figures/macrosystems_logo_long (1).png" alt="Logo" width="300" height="80">
+  <a href="https://github.com/ilamatos/venation_tradeoffs">
+    <img src="figures/Logo.png" alt="Logo" width="500" height="300">
   </a>
 
 <h3 align="center">Leaf venation form versus function trade-offs</h3>
