@@ -171,7 +171,7 @@ You will need R version 4.3.1 (or greater) and the following R-packages installe
    ```
    Some packages may need to be installed from the source
    
-    ```sh
+```sh
   # Install BHPMF R-package
   packageurl <- "https://cran.r-project.org/src/contrib/Archive/BHPMF/BHPMF_1.0.tar.gz"
   install.packages(packageurl, repos=NULL, type="source
