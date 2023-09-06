@@ -24,7 +24,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/ilamatos/venation_tradeoffs">
-    <img src="figures/Logo.png" alt="Logo" width="500" height="300">
+    <img src="figures/Logo.png" alt="Logo" width="500" height="400">
   </a>
 
 <h3 align="center">Leaf venation form versus function trade-offs</h3>
