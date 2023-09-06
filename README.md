@@ -88,8 +88,8 @@ In this study, we obtained leaf venation form and functional traits from a phylo
 <!-- FIGURE 1 -->
 <br />
 <div align="left">
-  <a href="https://github.com/ilamatos/xylem_implosion_safety">
-    <img src="figures/Figure_1.png" alt="Logo" width="700" height="700">
+  <a href="https://github.com/ilamatos/venation_tradeoffs">
+    <img src="figures/Fig1.png" alt="Logo" width="800" height="700">
   </a>
 
 <h3 align="left">Figure 1</h3>
