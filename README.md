@@ -129,6 +129,12 @@ Hypothetical tradeoffs between leaf venation function (flow efficiency, damage r
  ```    
 ## Leaf venation form traits
 
+<!-- FIGURE 2 -->
+<br />
+<div align="left">
+  <a href="https://github.com/ilamatos/venation_tradeoffs">
+    <img src="figures/Table2.png" alt="Figure2" width="1000" height="700">
+  </a>
 
 <!-- STATISTICAL ANALYSIS -->
 ## Statistical analysis
@@ -139,7 +145,7 @@ In our first approach, we carried out a PCA with all leaf traits (form and funct
 
 In our second approach, we fitted GBM models to quantify the contribution of  different network form features to determine each leaf function. GBM is a forward machine-learning ensemble method that combines the predictions from various weak learner models and builds a final predictive model with a more accurate estimate of the response variable. Unlike traditional regression models, GBMs are robust to outliers, and can effectively capture complex non-linear interactions between predictor variables (Natekin and Knoll, 2013). 
 
-GBM models were fitted using one leaf functional trait (P50, P88, ISI, SWP midrib, SWP lamina, SWS midrib, SWS lamina, ∆Kleaf mean, Kleaf max, 𝜀 whole, 𝜀 lamina, LMA, Phe) at a time as the response variables, and clade (ferns, basal angiosperms, monocots, basal eudicots, rosids, asterids) plus the three venation form traits (VD, MST, ER) as predictor variables. To facilitate the interpretation of model results, we coded the categorical variable ‘clade’ using numbers from 1 (= ferns) to 6 (=asterids). We also binned the venation form traits into three bins to represent major, medium, and minor veins. Because not all leaves have veins of the exact same size, we first standardize r min within each species (by dividing each r min value by the maximum r min for each species), so that r min across all species varied from 0 to 1. After this standardization, we classified r min values into minor (0 < r min ≤ 0.3), medium  (0.3 < r min ≤ 0.6) and major veins (r min > 0.6), and calculated the median VD, MST and ER for each bin. As the venation form traits were extracted from whole-leaf networks we considered any absences of veins at a certain scale as true absences (Blonder et al., 2020), and assigned a median value of zero in those cases. To fit each GBM, we split data 80:20 between training and test. Then, we used H2O’s Automatic Machine Learning function h2o.automl as implemented in the h2o R-package to perform a hyperparameter search over the GBM parameters in order to deliver the best model for each functional trait. To prevent model overfit, our hyperparameter tuning was done with a maximum running time of 30 seconds and a 3-fold cross validation. Model performance was assessed using the Root Mean-Square Error (RMSE). From each best model, we obtained the total variance explained, the influence of each predictor variable, and the strength of pairwise interactions between them. The influence of each predictor variable was assessed using both permutation variable importance and magnitude of variable attributions (SHapley Additive exPlanations -SHAP values, Štrumbelj and Kononenko, 2014). Variable importance, ranging from 0 (lowest importance) to 1 (highest importance), was determined using the h2o.varimp function, which measures the increase in the prediction error of the model (RMSE) after variable values are permuted. SHAP values were determined using h2o.predict_contributions function, which measures the impact of every variable on the prediction by the model for each specific instance of the data, so that variables with large absolute SHAP values are more important. The strength of the pairwise interactions was calculated as the H-statistic (Friedman and Popescu, 2008) using the function Interaction$new from the iml (Interpretable Machine Learning) R-package. H-statistic measures how much of the variation of the predicted outcome depends on a given pairwise interaction between predictor variables, and varies from 0 (no interaction) to 1(100% of variance is due to interactions). Due to the low sample size (N = 32), GBM models for P50 and P88 were fitted using the BHPMF-imputed data, for all other response variables the original (non-imputed) functional trait dataset was used.
+GBM models were fitted using one leaf functional trait (P50, P88, ISI, SWP midrib, SWP lamina, SWS midrib, SWS lamina, ∆Kleaf mean, Kleaf max, 𝜀 whole, 𝜀 lamina, LMA, Phe) at a time as the response variables, and clade (ferns, basal angiosperms, monocots, basal eudicots, rosids, asterids) plus the three venation form traits (VD, MST, ER) as predictor variables. To facilitate the interpretation of model results, we coded the categorical variable ‘clade’ using numbers from 1 (= ferns) to 6 (=asterids). We also binned the venation form traits into three bins to represent major, medium, and minor veins. Because not all leaves have veins of the exact same size, we first standardize r min within each species (by dividing each r min value by the maximum r min for each species), so that r min across all species varied from 0 to 1. After this standardization, we classified r min values into minor (0 < r min ≤ 0.3), medium  (0.3 < r min ≤ 0.6) and major veins (r min > 0.6), and calculated the median VD, MST and ER for each bin. As the venation form traits were extracted from whole-leaf networks we considered any absences of veins at a certain scale as true absences (Blonder et al., 2020), and assigned a median value of zero in those cases. To fit each GBM, we split data 80:20 between training and test. Then, we used H2O’s Automatic Machine Learning function h2o.automl as implemented in the h2o R-package to perform a hyperparameter search over the GBM parameters in order to deliver the best model for each functional trait. To prevent model overfit, our hyperparameter tuning was done with a maximum running time of 30 seconds and a 3-fold cross validation. Model performance was assessed using the Root Mean-Square Error (RMSE). From each best model, we obtained the total variance explained, the influence of each predictor variable, and the strength of pairwise interactions between them. The influence of each predictor variable was assessed using both permutation variable importance and magnitude of variable attributions (SHapley Additive exPlanations -SHAP values, Štrumbelj and Kononenko, 2014). Variable importance, ranging from 0 (lowest importance) to 1 (highest importance), was determined using the h2o.varimp function, which measures the increase in the prediction error of the model (RMSE) after variable values are permuted. SHAP values were determined using h2o.predict_contributions function, which measures the impact of every variable on the prediction by the model for each specific instance of the data, so that variables with large absolute SHAP values are more important. The strength of the pairwise interactions was calculated as the H-statistic (Friedman and Popescu, 2008) using the function Interaction$new from the iml (Interpretable Machine Learning) R-package. H-statistic measures how much of the variation of the predicted outcome depends on a given pairwise interaction between predictor variables, and varies from 0 (no interaction) to 1 (100% of variance is due to interactions). Due to the low sample size (N = 32), GBM models for P50 and P88 were fitted using the BHPMF-imputed data, for all other response variables the original (non-imputed) functional trait dataset was used.
 
 Kruskal wallis tests followed by pairwise Wilcox tests with Benjamini and Hochberg (1995) p-value adjustment method were conducted to test for differences in the leaf functional traits across plant clades, and also to test our specific hypothesis that resilience (𝛥Kleaf mean) varies across venation types (parallel, palmate, pinnate).
 
@@ -161,22 +167,21 @@ You will need R version 4.3.1 (or greater) and the following R-packages installe
    ```
 2. Install the necessary R-packages
    ```sh
-   install.packages(c("ggpubr", "viridis", "BIEN", "maps", "mapdata", "raster", "sp", "smatr", "vegan", "tidyverse", "readxl", "hrbrthemes", "hexbin"))
+   install.packages(c("tidyverse", "magrittr", "ggpubr", "vegan", "ggrepel", "viridis", "data.table", "iml"))
    ```
    Some packages may need to be installed from the source
    
     ```sh
-   # installing V.PhyloMaker 2 
-   library(devtools)
-   devtools::install_github("jinyizju/V.PhyloMaker2")
-
-   # installing and loading ggtree
-   install.packages("BiocManager", repos = "https://cloud.r-project.org")
-   library(BiocManager)
-   BiocManager::install("ggtree")
+  # Install BHPMF R-package
+  packageurl <- "https://cran.r-project.org/src/contrib/Archive/BHPMF/BHPMF_1.0.tar.gz"
+  install.packages(packageurl, repos=NULL, type="source
+  
+  # Install h2o R-package 
+  install.packages("C:/Users/ilain/Downloads/h2o-3.42.0.3/h2o-3.42.0.3/R/h2o_3.42.0.3.tar.gz",
+                   repos = NULL, type = "source")
     
    ```
-4. Run the R-script "xylem_implosion_safety_v3.R"
+4. Run the R-script "venation_tradeoffs_v1.R"
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -185,7 +190,7 @@ You will need R version 4.3.1 (or greater) and the following R-packages installe
 
 Ilaine Silveira Matos - ilaine.matos@gmail.com
 
-Project Link: [https://github.com/ilamatos/xylem_implosion_safety](https://github.com/ilamatos/xylem_implosion_safety)
+Project Link: [https://github.com/ilamatos/venation_tradeoffs](https://github.com/ilamatos/venation_tradeoffs)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -193,21 +198,12 @@ Project Link: [https://github.com/ilamatos/xylem_implosion_safety](https://githu
 ## References
 
 * []()Benjamini Y and Hochberg Y (1995) Journal of the Royal Statistical Society Series B
-* []()Blackman CJ et al (2010) New Phytologist
-* []()Blackman CJ et al (2018) Annals of Botany
-* []()Brodribb TJ and Holbrook MN (2005) Plant Physiology
-* []()Escheverria A et al (2022) American Journal of Botany
-* []()Hacke UG et al (2001) Oecologia 
-* []()Hacke UG et al (2004) American Journal of Botany
-* []()Jacobson AL et al (2005) Plant Physiology
-* []()Pittermann J et al (2016) Plant Cell and Environment
-* []()Pratt RB and Jacobsen AL (2017)
-* []()R Foundation for Statistical Computing (2023) Plant Cell and Environment
-* []()Sperry JS (2003) International Journal of Plant Sciences
-* []()Sperry JS and Hacke UG (2004) American Journal of Botany
-* []()Sperry JS et al (2006) American Journal of Botany
-* []()Warton DI et al (2011) Methods in Ecology and Evolution
-* []()Zhang YJ et al (2023) New Phytologist
+* []()Blonder B et al (2020) New Phytologist
+* []()Blonder B et al (2018) Journal of Ecology
+* []()Friedman JH and Popescu BE (2008) Annals of Applied Statistics
+* []()Natekin A and Knoll A (2013) Frontiers in Neurorobotics
+* []()Schrodt F (2015) Global Ecology and Biogeography
+* []()Štrumbelj E and Kononenko I (2014) Knowledge and Information Systems 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
