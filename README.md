@@ -63,6 +63,12 @@
         <li><a href="#prerequisites">Prerequisites</a></li>
         <li><a href="#installation">Installation</a></li>
       </ul>
+    <li>
+      <a href="#PCA">Principal component analysis (PCA)</a>
+      </ul>
+    <li>
+      <a href="#GBM">Gradient boosting regression models (GBM)</a>
+      </ul>
     </li>
     <li><a href="#contact">Contact</a></li>
     <li><a href="#references">References</a></li>
@@ -353,16 +359,82 @@ You can plot the partial dependent plots (PDP) and individual conditional expect
 # For example plot PDP and ICE for density of major veins (VD_major)
 h2o.ice_plot(top_mod, newdata = v_train, column = "VD_major")
 ```
+
 Below you can see PDP and ICE plots for all predictor variables.
 <!-- FIGURE 4 -->
 <br />
 <div align="left">
   <a href="https://github.com/ilamatos/venation_tradeoffs">
-    <img src="figures/Figure2.png" alt="Broken_stick" width="700" height="900">
+    <img src="GBM outputs/PDP_ICE_Kleaf_max.png" alt="Broken_stick" width="700" height="900">
   </a>
 
-<h3 align="left">Figure 3</h3>
+<h3 align="left">Figure 4</h3>
 Partial dependence plots (PDP) and Individual Condition Expectation (ICE) plots for the marginal effect of the predictor variables: (a) VD major; (b) VD medium; (c) VD minor; (d) ER major; (e) ER medium; (f) ER minor; (g) MST major; (h) MST medium and (i) MST minor on the response variable Kleaf max. PDP shows the average effect, while ICE plots show the effect for each percentile. Original observation values are marked by semi-transparent circles on each ICE line. Gray bars show the distribution of each predictor variable.
+
+We can also visualize the SHAP summary plot.
+
+```sh
+# SHAP plot
+shap_plot<-h2o.shap_summary_plot(top_mod, newdata = v_train)+
+  labs(title = target)+
+  theme(legend.position="none",
+        axis.text = element_text(size = 14),
+        axis.title = element_text(size = 14),
+        title = element_text(size = 14));shap_plot
+```
+
+<!-- FIGURE 5 -->
+<br />
+<div align="left">
+  <a href="https://github.com/ilamatos/venation_tradeoffs">
+    <img src="GBM outputs/SHAP_Kleaf_max.png" alt="Broken_stick" width="700" height="700">
+  </a>
+
+<h3 align="left">Figure 5</h3>
+SHapley Additive exPlanations (SHAP) summary plots for Kleafmax. SHAP summary plot shows the contribution of each predictor variable (leaf venation form traits: VDminor, VDmedium, VD major, MSTminor, MSTmedium, MSTmajor, ERminor, ERmedium, ERmajor, and plant clades) for each instance of the data (each of the 120 species). Each point on the summary plot is a SHAP value for a predictor variable and a species. The position on the y-axis is determined by the variable importance and on the x-axis by the SHAP contribution to the response variable (SHAP > 0 = response variable increases, SHAP < 0 = response variable decreases). The color represents the normalized value of the predictor variable from 0 (blue) to 1 (pink).  All effects describe the behavior of the model and are not necessarily causal in the real world.
+
+Finally, we can use the R-package 'iml' to calculate the strength of the pairwise interactions between the predictor variables.
+
+```sh
+# Pairwise interactions strength using iml
+# Create a data frame with just the predictor variables
+features <- as.data.frame(venation) %>% dplyr::select(all_of(independent), dependent)%>%na.omit%>% select(-dependent)
+# Create a vector with the actual responses
+venation2 <- venation %>% 
+  as.data.table() %>% 
+  mutate(pred = as.data.table(h2o.predict(top_mod, newdata=venation))$predict)
+response <- as.data.frame(venation2%>% select(target)%>%na.omit)[,1]
+# Create custom predict function that returns the predicted values as a
+#    vector (probability of purchasing in our example)
+pred <- function(model, newdata)  {
+  results <- as.data.frame(h2o.predict(model, as.h2o(newdata)))
+  return(results)
+}
+# create predictor object to pass to explainer functions
+predictor.gbm <- Predictor$new(
+  model = top_mod, 
+  data = features, 
+  y = response, 
+  predict.fun = pred,
+  class = "classification"
+)
+# Calculate H-statistic
+interact<- Interaction$new(predictor.gbm)
+```
+
+In this example, we plot the interaction between vein density and minimum spanning tree ratio for medium size veins.
+
+<!-- FIGURE 6 -->
+<br />
+<div align="left">
+  <a href="https://github.com/ilamatos/venation_tradeoffs">
+    <img src="GBM outputs/Fig5c_Kleaf_max.png" alt="Broken_stick" width="700" height="600">
+  </a>
+
+<h3 align="left">Figure 6</h3>
+Partial dependent co-plot for the pairwise interaction between density of medium size veins (VD_medium) and minimum spanning tree ratio of medium size veins (MST_medium) to determine Kleaf max.
+
+
 
 <!-- CONTACT -->
 ## Contact
