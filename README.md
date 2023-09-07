@@ -169,7 +169,7 @@ You will need R version 4.3.1 (or greater) and the following R-packages installe
    ```sh
    install.packages(c("tidyverse", "magrittr", "ggpubr", "vegan", "ggrepel", "viridis", "data.table", "iml"))
    ```
-   Some packages may need to be installed from the source
+3. Some packages may need to be installed from the source
    
 ```sh
   # Install BHPMF R-package
@@ -179,9 +179,13 @@ You will need R version 4.3.1 (or greater) and the following R-packages installe
   # Install h2o R-package 
   install.packages("C:/Users/ilain/Downloads/h2o-3.42.0.3/h2o-3.42.0.3/R/h2o_3.42.0.3.tar.gz",
                    repos = NULL, type = "source")
-    
    ```
-4. Run the R-script "venation_tradeoffs_v1.R"
+4. Run the R-scripts following the order below
+ * []()"1_prepare_functional_data.R"
+ * []()"2_prepare_form_data.R"
+ * []()"3_pca_analysis.R"
+ * []()"4_gbm_analysis.R"
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
