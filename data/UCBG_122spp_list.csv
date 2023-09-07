@@ -1,0 +1,123 @@
+spp_code,spp_name_ucbg,spp_name_WP,canonical_author,genus_WP,family_WP,order_apg4,clade,sampling_date_YYYYMMDD,collectors,accession_number,ucbg_bed,ucbg_area,growth_form,evol_distinct
+Abe_mex,Abelia mexicana,Abelia mexicana,Villarreal,Abelia,Caprifoliaceae,Dipsacales,asterids,20210726; 20210922,"Mickey,Somona,James; Ilaine",931304,359,Mexico/Central America,shrub,0.0968
+Aex_pun,Aextoxicon punctatum,Aextoxicon punctatum,Ruiz & Pav.,Aextoxicon,Aextoxicaceae,Berberidopsidales,rosids,20210802; 20210920,"Mickey, Somona, Ethan; Ilaine",730753,601,South-America,tree,0.2984
+Ale_cor,Alectryon coriaceus,Alectryon coriaceus,(Benth.) Radlk.,Alectryon,Sapindaceae,Sapindales,rosids,20210504; 20210907,Mickey Adrian,20030360,513,Australasia,tree,0.0418
+Als_lig,Alstroemeria ligtu,Alstroemeria ligtu,L.,Alstroemeria,Alstroemeriaceae,Liliales,monocots,20210426; 20210825,"Mickey, Adrian, Noah; Ilaine, Mickey",830808,609,South-America,herb,0.0418
+Ane_cal,Anemopsis californica,Anemopsis californica,(Nutt.) Hook. & Arn.,Anemopsis,Saururaceae,Piperales,basal angiosperms,20210602; 20210922,"MIckey, Adrian, Ilaine, Sophia, Frances; Mickey",620082,3A,California,aquatic,0.1344
+Arg_spi,Argania spinosa,Argania spinosa,(L.) Skeels,Argania,Sapotaceae,Ericales,asterids,20210519,"Ilaine, Mickey, Gideon",20030221,706,Mediterranean,tree,0.0808
+Ari_bae,Aristolochia baetica,Aristolochia baetica,L.,Aristolochia,Aristolochiaceae,Piperales,basal angiosperms,20210519,"Ilaine, Mickey, Gideon",20120405,704,Mediterranean,climbing,0.0483
+Asi_tri,Asimina triloba,Asimina triloba,(L.) Dunal,Asimina,Annonaceae,Magnoliales,basal angiosperms,20210707,"Mickey,Adrian,Sonoma,Nguyen, Lisa, James, Jason",822026,305,Eastern North America,tree,0.162
+Asp_obl,Asplenium oblongifolium,Asplenium oblongifolium,Colenso,Asplenium,Aspleniaceae,Polypodiales,ferns,20210421; 20210927,"Mickey, Adrian,Jason; Ilaine, James",720613,508,Australasia,herb,0.1232
+Ast_ban,Astelia banksii,Astelia banksii,A.Cunn.,Astelia,Asteliaceae,Asparagales,monocots,20210504,Mickey Adrian,920973,511B,Australasia,herb,0.1172
+Auc_jap,Aucuba japonica,Aucuba japonica,Thunb.,Aucuba,Garryaceae,Garryales,asterids,20210315; 20210817,"Mickey, Ilaine, Adrian, Eric; Sonoma, Adrian",760208,243,Asia,shrub,0.0552
+Bar_pur,Barbacenia purpurea,Barbacenia purpurea,Hook.,Barbacenia,Velloziaceae,Pandanales,monocots,20210811,"James, Ilaine, Corina",NA,Greenhouse 2,Tropical house,shrub,0.1224
+Beg_for,Begonia formosa,Begonia formosa,(Hayata) Masam.,Begonia,Begoniaceae,Cucurbitales,rosids,20210315,"Mickey, Ilaine, Adrian, Eric",20050211,220C,Asia,herb,0.0371
+Bei_tar,Beilschmiedia tarairi,Beilschmiedia tarairi,(A. Cunn.) Kirk,Beilschmiedia,Lauraceae,Laurales,basal angiosperms,20210331,"Mickey, Adrian",20010025,513,Australasia,tree,0.0918
+Bux_har,Buxus harlandii,Buxus harlandii,Hance,Buxus,Buxaceae,Buxales,basal eudicots,20210803; 20210913,"Ilaine, Mickey, Adrian; Ilaine, James",790114,242,Asia,shrub,0.1312
+Cal_nut,Calamagrostis nutkaensis ,Deyeuxia nutkaensis,(J. Presl) Steud.,Deyeuxia,Poaceae,Poales,monocots,20210616,"Mickey, Adrian, Somona, James, Sophia",891820,4,California,herb,0.013
+Cal_pan,Caldcluvia paniculosa,Ackama paniculosa,(F.Muell.) Hoogland,Ackama,Cunoniaceae,Oxalidales,rosids,20210331; 20210915,"Mickey, Adrian; Mickey, James",20010597,513,Australasia,tree,0.092
+Cam_sin,Camellia sinensis,Camellia sinensis,(L.) Kuntze,Camellia,Theaceae,Ericales,asterids,20210224,"Ilaine, Mickey, Eric",820215,235,Asia,tree,0.0496
+Can_can,Canarina canariensis,Canarina canariensis,(L.) Vatke,Canarina,Campanulaceae,Asterales,asterids,20210517,"Mickey, Ilaine, Gideon",611429,707B,Mediterranean,climbing,0.0692
+Car_pal,Carya palmeri,Carya palmeri,W.E. Manning,Carya,Juglandaceae,Fagales,rosids,20210726,"Mickey,Somona,James",970479,378,Mexico/Central America,tree,0.0705
+Car_pen,Carex pendula,Carex agastachys,Huds.,Carex,Cyperaceae,Poales,monocots,20210526,"Mickey, Adrian,Gideon",20120329,703,Mediterranean,herb,0.0107
+Cat_edu,Catha edulis,Catha edulis,Forssk.,Catha,Celastraceae,Celastrales,rosids,20210208; 20210802,"Mickey, Ilaine, Ben; Mickey, Ilaine, Ethan",780415,143,Africa,tree,0.1571
+Cel_aus,Celtis australis,Celtis australis,L.,Celtis,Cannabaceae,Rosales,rosids,20210519,"Ilaine, Mickey, Gideon",790592,701,Mediterranean,tree,0.1721
+Cel_ten,Celtis tenufolia,Celtis tenuifolia,Nutt.,Celtis,Cannabaceae,Rosales,rosids,20210726,"Mickey,Somona,James",820564,304,Eastern North America,tree,0.1721
+Chi_nit,Chimonanthus nitens,Chimonanthus nitens,Oliv.,Chimonanthus,Calycanthaceae,Laurales,basal angiosperms,20210317,"Mickey, Ilaine, Adrian, Eric",760477,245C,Asia,tree,0.1099
+Chl_spi,Chloranthus spicatus,Chloranthus spicatus,(Thunb.) Makino,Chloranthus,Chloranthaceae,Chloranthales,basal angiosperms,20210816,Mickey,870468,Greenhouse 2,Tropical house,shrub,0.3052
+Cis_ant,Cissus antarctica,Cissus antarctica,Vent.,Cissus,Vitaceae,Vitales,rosids,20210329,"Ilaine, Mickey, Adrian, James",20010620,505,Australasia,climbing,0.1069
+Cis_pop,Cistus populifolius,Cistus populifolius,L.,Cistus,Cistaceae,Malvales,rosids,20210517,"Mickey, Ilaine, Gideon",20041097,700B,Mediterranean,shrub,0.0222
+Cit_mon,Citharexylum montevidense,Citharexylum montevidense,(Spreng.) Moldenke,Citharexylum,Verbenaceae,Lamiales,asterids,20210428,"Mickey, Adrian, Noah",20140599,653,South-America,tree,0.0383
+Clu_ala,Clusia alata,Clusia alata,Planch. & Triana,Clusia,Clusiaceae,Malpighiales,rosids,20210721,"Ilaine, Sonoma, James",891280,359,Mexico/Central America,tree,0.1266
+Cne_tri,Cneorum tricoccon,Cneorum tricoccon,L.,Cneorum,Rutaceae,Sapindales,rosids,20210524,"Mickey, Adrian,James",20041196,702,Mediterranean,shrub,0.1722
+Com_ery,Combretum erythrophyllum,Combretum erythrophyllum,Sond.,Combretum,Combretaceae,Myrtales,rosids,20210210,"Ilaine, Mickey; Mickey, Ilaine, Ethan",730581,144,Africa,tree,0.2631
+Com_umb,Comandar umbellata,Comandra umbellata,(L.) Nutt.,Comandra,Comandraceae,Santalales,rosids,20210706,"Mickey, Adrian, Lisa, James, Sophia",941236,23B,California,shrub,0.2529
+Cor_bud,Corokia buddleioides,Corokia buddleioides,A.Cunn.,Corokia,Argophyllaceae,Asterales,asterids,20210704; 20210825,"Mickey, Ilaine; Ilaine, Mickey",505941025,505,Australasia,shrub,0.0924
+Cor_lae,Corynocarpus laevigata,Corynocarpus laevigata,J.R.Forst. & G.Forst.,Corynocarpus,Corynocarpaceae,Cucurbitales,rosids,20210504,Mickey Adrian,770128,508,Australasia,tree,0.1469
+Cos_tap,Costus tappenbeckianus,Costus tappenbeckianus,J. Braun & K. Schum.,Costus,Costaceae,Zingiberales,monocots,20210816,Mickey,20090527,Greenhouse 2,Tropical house,herb,0.0609
+Cri_pat,Crimodendron patagua,Crinodendron patagua,Molina,Crinodendron,Elaeocarpaceae,Oxalidales,rosids,20210426,"Mickey, Adrian, Noah",541123,608,South-America,tree,0.1452
+Cup_nud,Cuphea nudicostata,Cuphea nudicostata,Hemsl.,Cuphea,Lythraceae,Myrtales,rosids,20210719,"Ilaine, Sonoma, Lisa, Nguyen, Eric",900446,353,Mexico/Central America,shrub,0.0792
+Cus_spi,Cussonia spicata,Cussonia spicata,Thunb.,Cussonia,Araliaceae,Apiales,asterids,20210222; 20210630,"Ilaine, Mickey, Adrian; Mickey, Adrian, James, Lisa, Ethan",730574,142,Africa,tree,0.0387
+Cya_ful,Cyathea fulva,Cyathea fulva,(M. Martens & Galeotti) Fée,Cyathea,Cyatheaceae,Cyatheales,ferns,20210719; 2021004,"Ilaine, Sonoma, Lisa, Nguyen, Eric; Mickey, Eric",20120101,352,Mexico/Central America,tree,0.1583
+Cyc_bip,Cyclanthus bipartidus,Cyclanthus bipartitus,Poit. ex A. Rich.,Cyclanthus,Cyclanthaceae,Pandanales,monocots,20210818,"Ilaine, Mickey, James, Adrian, Sonoma",931315,Greenhouse 2,Tropical house,herb,0.0338
+Dap_him,Daphniphyllum himalayensi,Daphniphyllum himalayense,(Benth.) Müll. Arg.,Daphniphyllum,Daphniphyllaceae,Saxifragales,basal eudicots,20210310,"Mickey, Adrian",20020188,220B,Asia,tree,0.1171
+Del_fis,Delphinium fissum,Delphinium fissum,Waldst.,Delphinium,Ranunculaceae,Ranunculales,basal eudicots,20210517,"Mickey, Ilaine, Gideon",20020423,709,Mediterranean,herb,0.038
+Des_spi,Desfontainia spinosa,Desfontainia spinosa,Ruiz & Pav.,Desfontainia,Columelliaceae,Bruniales,asterids,20210428,"Mickey, Adrian, Noah",830792,658,South-America,tree,0.2144
+Dic_ant,Dicksonia antarctica,Dicksonia antarctica,Labill.,Dicksonia,Dicksoniaceae,Cyatheales,ferns,20210419; 20210929,"Mickey, Adrian; Ilaine, James, Mickey",941056,508,Australasia,tree,0.0655
+Dic_feb,Dichroa febrifuga,Hydrangea febrifuga,Lour.,Hydrangea,Hydrangeaceae,Cornales,asterids,20210301,"Ilaine, Mickey, Adrian, Eric",20100254,236,Asia,shrub,0.1138
+Dic_squ,Dicksonia squarrosa,Dicksonia squarrosa,(G. Forst.) Sw.,Dicksonia,Dicksoniaceae,Cyatheales,ferns,20210419; 20210907,"Mickey, Adrian; Ilaine, Mickey, James",20100344,508,Australasia,tree,0.0655
+Dio_lyc,Diospyros lycioides,Diospyros lycioides,Desf.,Diospyros,Ebenaceae,Ericales,asterids,20210210,"Ilaine, Mickey",491820,144,Africa,tree,0.0883
+Dio_pol,Dioscorea polystachya,Dioscorea oppositifolia,Turcz.,Dioscorea,Dioscoreaceae,Dioscoreales,monocots,20210818,"Ilaine, Mickey, James, Adrian, Sonoma",700034,Greenhouse 2,Tropical house,climbing,0.0299
+Dip_esc,Diplazium esculentum,Diplazium esculentum,(Retz.) Sw.,Diplazium,Athyriaceae,Polypodiales,ferns,20210414; 20210610,"Mickey, Adrian, Ilaine; Mickey, James",560655,511B,Australasia,herb,0.0719
+Dir_occ,Dirca occidentais,Dirca occidentalis,A. Gray,Dirca,Thymelaeaceae,Malvales,rosids,20210609,"Mickey, Adrian, James, Somona, Sophia",870079,22A,California,shrub,0.0555
+Doo_asp,Doodia aspera,Doodia aspera,R. Br.,Doodia,Blechnaceae,Polypodiales,ferns,20210419; 20210929,"Mickey; Ilaine, James, Mickey",541237,508,Australasia,herb,0.0689
+Dry_rem,Dryopteris remosa ,Dryopteris ramosa,(C. Hope) C. Chr.,Dryopteris,Dryopteridaceae,Polypodiales,ferns,20210421,"Mickey, Adrian,Jason",980390,500,Australasia,herb,0.083
+Ehr_acu,Ehretia acuminata,Ehretia acuminata,R. Br.,Ehretia,Boraginaceae,Boraginales,asterids,20210208,"Mickey, Somona, Ethan",980746,513,Australasia,tree,0.0972
+Equ_tel,Equisetum telmateia,Equisetum telmateia,Ehrh.,Equisetum,Equisetaceae,Equisetales,ferns,20210616; 20211004,"Mickey, Adrian, Somona, James, Sophia; Mickey, Eric",750357,80,California,herb,0.5569
+Esc_her,Escallonia herrerae,Escallonia herrerae,Mattf.,Escallonia,Escalloniaceae,Escalloniales,asterids,20210428,"Mickey, Adrian, Noah",640493,651,South-America,tree,0.131
+Euc_cri,Euclea crispa,Euclea crispa,(Thunb.) Gürke,Euclea,Ebenaceae,Ericales,asterids,20210222,"Ilaine, Mickey, Adrian",20060645,141,Asia,tree,0.0883
+Eur_jap,Eurya japonica,Eurya japonica,Thunb.,Eurya,Pentaphylacaceae,Ericales,asterids,20210315,"Mickey, Ilaine, Adrian, Eric",610733,220C,Asia,tree,0.0714
+Eus_jap,Euscaphis japonica,Staphylea japonica,(Thunb.) Kanitz,Staphylea,Staphyleaceae,Crossosomatales,rosids,20210823,Mickey James,20050371,222,Asia,tree,0.1138
+Fra_son,Francoa sonchifolia ,Francoa appendiculata,Cav.,Francoa,Francoaceae,Geraniales,rosids,20210426,"Mickey, Adrian, Noah",831525,609,South-America,herb,0.1025
+Gom_keu,Gomortega keule,Gomortega keule,(Molina) Baill.,Gomortega,Gomortegaceae,Laurales,basal angiosperms,20210428,"Mickey, Adrian, Noah",20010213,653,South-America,tree,0.2423
+Hel_chi,Helwingia chinensis,Helwingia chinensis,Batalin,Helwingia,Helwingiaceae,Aquifoliales,asterids,20210301,"Ilaine, Mickey, Adrian, Eric",20020209,234,Asia,tree,0.1071
+Hib_sca,Hibbertia scandens,Hibbertia scandens,(Willd.) Dryand.,Hibbertia,Dilleniaceae,Dilleniales,rosids,20210809,"James, Lisa",NA,510,Australasia,climbing,0.2099
+Ill_lan,Illicium lanceolatum,Illicium lanceolatum,A.C. Sm.,Illicium,Schisandraceae,Austrobaileyales,basal angiosperms,20210301,"Ilaine, Mickey, Adrian, Eric",760212,239,Asia,tree,0.1363
+Ite_ili,Itea ilicifolia,Itea ilicifolia,Oliv.,Itea,Iteaceae,Saxifragales,basal eudicots,20210317,"Mickey, Ilaine, Adrian, Eric",860414,236,Asia,shrub,0.2588
+Kni_uva,Kniphofia uvaria,Kniphofia uvaria,(L.) Oken,Kniphofia,Asphodelaceae,Asparagales,monocots,20210208; 20210727,"Mickey, Ilaine, Ben; Ilaine, Ethan",340175,143,Africa,herb,0.0397
+Lon_jap,Lonicera japonica,Lonicera japonica,Thunb.,Lonicera,Caprifoliaceae,Dipsacales,asterids,20210714; 20210825,"Ilaine, Sonoma, James, Lisa, Nguyen, Jason; Ilaine, Mickey",NA,427,Chinese medicinal garden,climbing,0.0239
+Luz_niv,Luzula nivea,Luzula nivea,(Nathh.) DC.,Luzula,Juncaceae,Poales,monocots,20210526,"Mickey, Adrian,Gideon",20070141,704,Mediterranean,herb,0.0326
+Mag_che,Magnolia chevalieri,Magnolia chevalieri,(Dandy) V.S. Kumar,Magnolia,Magnoliaceae,Magnoliales,basal angiosperms,20210224,"Ilaine, Mickey, Eric",20090506,236,Asia,tree,0.1608
+Mal_pal,Malacothamnus palmeri,Malacothamnus palmeri,(S. Watson) Greene,Malacothamnus,Malvaceae,Malvales,rosids,20210706,"Mickey, Adrian, Lisa, James, Sophia",851139,23B,California,shrub,0.0906
+Mel_maj,Melianthus major,Melianthus major,L.,Melianthus,Francoaceae,Geraniales,rosids,20210222; 20210727,"Ilaine, Mickey, Adrian; Ilaine, Ethan",491818,145,Africa,shrub,0.0457
+Met_dav,Metapanax davidii,Metapanax davidii,(Franch.) J. Wen & Frodin,Metapanax,Araliaceae,Apiales,asterids,20210224,"Ilaine, Mickey, Eric",930209,236,Asia,tree,0.0328
+Mic_mul,Miconia multiplinervia,Miconia multiplinervia,Cogn.,Miconia,Melastomataceae,Myrtales,rosids,20210721,"Ilaine, Sonoma, James",20120510,359,Mexico/Central America,tree,0.0828
+Mic_pla,Microlepia platyphylla,Microlepia platyphylla,(D. Don) J. Sm.,Microlepia,Dennstaedtiaceae,Polypodiales,ferns,20210414; 20210927,"Mickey, Adrian, Ilaine; Ilaine, James",500577,513,Australasia,herb,0.1117
+Mon_car,Montinia caryophyllaceae,Montinia caryophyllacea,Thunb.,Montinia,Montiniaceae,Solanales,asterids,20210811,"James, Ilaine, Ehan",750110,141,Africa,shrub,0.1967
+Myr_rub,Myrica rubra,Morella rubra,(Lour.) Siebold & Zucc.,Morella,Myricaceae,Fagales,rosids,20210310,"Mickey, Adrian",650176,219,Asia,tree,0.0593
+Nan_dom,Nandina domestica,Nandina domestica,Thunb.,Nandina,Berberidaceae,Ranunculales,basal eudicots,20210308,"Ilaine, Mickey, Adrian",860621,242,Asia,shrub,0.1657
+Not_fus,Nothofagus fusca,Fuscospora fusca,(Blume) Oerst.,Fuscospora,Nothofagaceae,Fagales,rosids,20210329; 20210907,"Ilaine, Mickey, Adrian, James; Ilaine, Mickey, James",900611,511A,Australasia,tree,0.1586
+Nym,Nymphaea sp.,Nymphaea sp,L.,Nymphaea,Nymphaeaceae,Nymphaeales,basal angiosperms,20210823,"Mickey, James",20010088,228A,Asia,aquatic,NA
+Ole_eur,Olea europea,Olea europaea,L.,Olea,Oleaceae,Lamiales,asterids,20210208; 20210825,"Mickey, Ilaine, Ben; Ilaine, Mickey",551110,144,Africa,tree,0.036
+Ono_sen,Onoclea sensibilis,Onoclea sensibilis,L.,Onoclea,Onocleaceae,Polypodiales,ferns,20210707; 20210825,"Mickey,Adrian,Sonoma,Nguyen, Lisa, James, Jason; Ilaine, Mickey",800321,309,Eastern North America,herb,0.0479
+Osm_ber,Osmorhiza berteroi,Osmorhiza berteroi,DC.,Osmorhiza,Apiaceae,Apiales,asterids,20210614; 20210825,"Mickey,Adrian,Somona,James,Nguyen, Sophia; Ilaine, Mickey",900317,29,California,herb,0.0318
+Pae_bro,Paeonia broteri,Paeonia broteroi,Boiss. & Reut.,Paeonia,Paeoniaceae,Saxifragales,basal eudicots,20210524; 20210825,"Mickey,Adrian,James; Ilaine, Mickey",921535,703,Mediterranean,herb,0.0822
+Par_tor,Parajubaea torallyi,Parajubaea torallyi,(Mart.) Burret,Parajubaea,Arecaceae,Arecales,monocots,20210305,"Mickey, Adrian, Ilaine",20030187,611,South-America,tree,0.0126
+Per_acu,Pereskia aculeata,Pereskia aculeata,Mill.,Pereskia,Cactaceae,Caryophyllales,rosids,20210623,"Ilaine, Adrian, Sonoma, James, Lisa, Nguyen",630851,159,Desert of the Americas,tree,0.0183
+Peu_bol,Peumus boldus,Peumus boldus,Molina,Peumus,Monimiaceae,Laurales,basal angiosperms,20210426,"Mickey, Adrian, Noah",361375,608,South-America,tree,0.2754
+Phi_lat,Phillyrea latifolia,Phillyrea latifolia,L.,Phillyrea,Oleaceae,Lamiales,asterids,20210524,"Mickey, Adrian,James",7901174,704,Mediterranean,tree,0.0095
+Phi_var,Philodendrum varifolium,Philodendron variifolium,Schott,Philodendron,Araceae,Alismatales,monocots,20210818,"Ilaine, Mickey, James, Adrian, Sonoma",20120521,Greenhouse 2,Tropical house,climbing,0.2616
+Phy_pur,Phyllanthus purpusii,Phyllanthus purpusii,Brandegee,Phyllanthus,Phyllanthaceae,Malpighiales,rosids,20210719,"Ilaine, Sonoma, Lisa, Nguyen, Eric",762174,356?,Mexico/Central America,tree,0.053
+Pit_vir,Pittosporum viridiflorum,Pittosporum viridiflorum,Sims,Pittosporum,Pittosporaceae,Apiales,asterids,20210210; 20210630,"Ilaine, Mickey; Mickey, Adrian, James, Lisa, Ethan",810591,141,Africa,tree,0.0264
+Pla_ori,Platanus orientalis,Platanus orientalis,L.,Platanus,Platanaceae,Proteales,basal eudicots,20210519,"Ilaine, Mickey, Gideon",701760216,701,Mediterranean,tree,0.0768
+Pol_cor,Polygala cornuta,Rhinotropis cornuta,Kellogg,Rhinotropis,Polygalaceae,Fabales,rosids,20210906,"Mickey, Adrian, James, Somona, Sophia",910823,23B,California,shrub,0.1828
+Pol_cri,Pollia crispata,Pollia crispata,(R.Br.) Benth.,Pollia,Commelinaceae,Commelinales,monocots,20210412,"Mickey, Adrian",20030330,513,Australasia,herb,0.0489
+Pol_vir,Polygonum virginianum,Persicaria virginiana,L.,Persicaria,Polygonaceae,Caryophyllales,rosids,20210707,"Mickey,Adrian,Sonoma,Nguyen, Lisa, James, Jason",840652,304,Eastern North America,herb,0.0396
+Pro_hoo,Prosartes hooker,Prosartes hookeri,Torr.,Prosartes,Liliaceae,Liliales,monocots,20210706,"Mickey, Adrian, Lisa, James, Sophia",651083,21A,California,herb,0.0502
+Pte_esc,Pteridium esculentum,Pteridium esculentum,(G. Forst.) Cockayne,Pteridium,Dennstaedtiaceae,Polypodiales,ferns,20210421; 20210927; 20211006,"Mickey, Adrian,Jason; Ilaine, James; Mickey, James",950197,513,Australasia,herb,0.095
+Puy_alp,Puya alpestris,Puya alpestris,(Poepp.) Gay,Puya,Bromeliaceae,Commelinales,monocots,20210623; 20210825,"Ilaine, Adrian, Sonoma, James, Lisa, Nguyen; Ilaine, Mickey",560083,167,Desert of the Americas,herb,0.0136
+Qui_sap,Quillaja saponaria,Quillaja saponaria,Molina,Quillaja,Quillajaceae,Fabales,rosids,20210426,"Mickey, Adrian, Noah",361419,611,South-America,tree,0.2666
+Ran_lae,Randia laetevirens,Randia laetevirens,Standl.,Randia,Rubiaceae,Gentianales,asterids,20210721,"Ilaine, Sonoma, James",910152,371,Mexico/Central America,tree,0.0149
+Res_lut,Reseda luteola,Reseda luteola,L.,Reseda,Resedaceae,Brassicales,rosids,20210408,"Mickey, Sonoma, Ilaine, Jason",990665,425,Herb Garden,herb,0.1046
+Rha_pir,Rhamnus piripolia,Rhamnus pirifolia,Greene,Rhamnus,Rhamnaceae,Rosales,rosids,20210614; 20210825,"Mickey,Adrian,Somona,James,Nguyen,Sophia; Ilaine, Mickey",671218,29,California,shrub,0.0297
+Rib_vib,Ribes viburnifolium,Ribes viburnifolium,A. Gray,Ribes,Grossulariaceae,Saxifragales,basal eudicots,20210602,"MIckey, Adrian, Ilaine, Sophia, Frances",851431,9,California,shrub,0.0301
+Rom_cou,Romneya coulteri,Romneya coulteri,Harv.,Romneya,Papaveraceae,Ranunculales,basal eudicots,20210706,"Mickey, Adrian, Lisa, James, Sophia",501640,12A,California,shrub,0.0956
+Rub_odo,Rubus odoratus,Rubus odoratus,L.,Rubus,Rosaceae,Rosales,rosids,20210707,"Mickey,Adrian,Sonoma,Nguyen, Lisa, James, Jason",760803,304,Eastern North America,shrub,0.1935
+Rub_tin,Rubia tinctorum,Rubia tinctorum,L.,Rubia,Rubiaceae,Gentianales,asterids,20210804,"Mickey, Sonoma, Ilaine, Jason",730744,425,Herb Garden,herb,0.0303
+Sag_lat,Sagittaria latifolia,Sagittaria latifolia,Willd.,Sagittaria,Alismataceae,Alismatales,monocots,20210804,"Mickey, Sonoma, Ilaine, Jason",82209,404,Herb Garden,aquatic,0.1119
+Sal_sco,Salix scouleriana,Salix scouleriana,Barratt ex Hook.,Salix,Salicaceae,Malpighiales,rosids,20210614; 20210825,"Mickey,Adrian,Somona,James,Nguyen,Sophia; Ilaine, Mickey",770174,4,California,tree,0.0207
+Sam_nig,Sambucus nigra,Sambucus nigra,L.,Sambucus,Adoxaceae,Dipsacales,asterids,20210614; 20210825,"Mickey,Adrian,Somona,James,Nguyen,Sophia; Ilaine, Mickey",710153,29,California,tree,0.0594
+Sau_cer,Saururus cernus,Saururus cernuus,L.,Saururus,Saururaceae,Piperales,basal angiosperms,20210714; 20210825,"Ilaine, Sonoma, James, Lisa, Nguyen, Jason; Ilaine, Mickey",780467,302,Eastern North America,herb,0.091
+Sau_mad,Saurauia madrensis,Saurauia madrensis,B.T. Keller & Breedlove,Saurauia,Actinidiaceae,Ericales,asterids,20210719,"Ilaine, Sonoma, Lisa, Nguyen, Eric",900440,356?,Mexico/Central America,tree,0.0885
+Sch_pol,Schinus polygama,Schinus polygama,(Cav.) Cabrera,Schinus,Anacardiaceae,Sapindales,rosids,20210428,"Mickey, Adrian, Noah",600498,601,South-America,tree,0.0355
+Sim_chi,Simmondsia chinensis,Simmondsia chinensis,(Link) C.K. Schneid.,Simmondsia,Simmondsiaceae,Caryophyllales,rosids,20210609; 20210915,"Mickey, Adrian, James, Somona, Sophia; Mickey, Sophia",610369,24,California,shrub,0.2672
+Smi_his,Smilax hispida,Smilax tamnoides,Muhl. ex Torr.,Smilax,Smilacaceae,Liliales,monocots,20210714; 20210825; 20210920,"Ilaine, Sonoma, James, Lisa, Nguyen, Jason; Ilaine, Mickey; Ilaine",850648,304,Eastern North America,herb,0.0102
+Sol_lig,Solanum ligustrinum,Solanum ligustrinum,G. Lodd.,Solanum,Solanaceae,Solanales,asterids,20210802,"Mickey, Somona, Ethan",830264,608,South-America,tree,0.0397
+Sta_chi,Stachyurus chinensis,Stachyurus chinensis,Franch.,Stachyurus,Stachyuraceae,Crossosomatales,rosids,20210823,"Mickey, James",801160,219,Asia,tree,0.036
+Tas_lan,Tasmannia lanceolata,Tasmannia lanceolata,(Poir.) A.C. Sm.,Tasmannia,Winteraceae,Canellales,basal angiosperms,20210704,"Mickey, Ilaine",600052,508,Australasia,shrub,0.1012
+Tec_spe,Tecomanthe speciosa,Tecomanthe speciosa,W.R.B.Oliv.,Tecomanthe,Bignoniaceae,Lamiales,asterids,20210412; 20210913,"Mickey, Adrian; Ilaine, James",20020957,508,Australasia,tree,0.0649
+Tod_bar,Todea barbara,Todea barbara,T. Moore,Todea,Osmundaceae,Osmundales,ferns,20210414; 20210927,"Mickey, Adrian, Ilaine; Ilaine, James",590561,513,Australasia,tree,0.5725
+Tri_lan,Trichostema lanatum,Trichostema lanatum,Benth.,Trichostema,Lamiaceae,Lamiales,asterids,20210609,"Mickey, Adrian, James, Somona, Sophia",820779,24,California,shrub,0.0982
+Tro_ara,Trochodendron aralioides,Trochodendron aralioides,Siebold & Zucc.,Trochodendron,Trochodendraceae,Trochodendrales,basal eudicots,20210308,"Ilaine, Mickey, Adrian",610594,242,Asia,tree,0.1753
+Ure_car,Urera caracasana,Urera caracasana,(Jacq.) Gaudich. ex Griseb.,Urera,Urticaceae,Rosales,rosids,20210809,"Ilaine, Adrian",762135,359,Mexico/Central America,tree,0.0959
+Vio_gla,Viola glabella,Viola glabella,Nutt.,Viola,Violaceae,Malpighiales,rosids,20210602,"MIckey, Adrian, Ilaine, Sophia, Frances",530299,18A,California,herb,0.0183
