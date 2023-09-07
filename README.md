@@ -304,6 +304,65 @@ g_pca1<-ggarrange(g_pca_clade1, g_pca_rmin1,
 <h3 align="left">Figure 3</h3>
 First (PC1) and second (PC2) principal components of leaf venation form (VD, MST, ER, colored in red) and functional traits (Kleaf max, P50, P88, ISI, SWPmidrib, SWPlamina, SWSmidrib, SWSlamina, 𝛥Kleafmean, 𝜀whole, 𝜀lamina, LMA, Phe, colored in black) across 50 bins of vein diameter sizes (r min). Note that leaf form traits vary across r min sizes, while functional traits do not. 95% confidence ellipses enclose the data (a) at each plant phylogenetic clade (ferns, basal angiosperms, monocots, basal eudicots, rosids, asterids); and (b) at each vein diameter class (r min). Parenthetical values indicate the percentage variance explained by the first (PC1) and second (PC2) principal component axes. 
 
+<!-- GBM  -->
+## Gradient Boosting Regression Models (GBM)
+Example of GBM analysis, for the leaf functional trait Kleaf max.
+
+Start the h2o cluster and import the leaf trait dataset.
+```sh
+h2o.init() # start cluster
+
+# Import dataset
+venation_path <- "data/data_for_gbm.csv"
+venation <- h2o.uploadFile(path = venation_path)
+```
+Then, define the predictor and response variables.
+
+```sh
+# Select predictor (independent) and response (dependent) variables
+independent <- c("clade2", "VD_minor", "VD_medium", "VD_major",
+                 "ER_minor", "ER_medium", "ER_major",
+                 "MST_minor", "MST_medium", "MST_major")
+dependent <- "Kleaf_max"
+```
+Split the dataset into training and test. In this case we are using a 80:20 ratio.
+
+```sh
+# Split dataset giving the training dataset 80% of the data
+v_dat <- h2o.splitFrame(venation, ratios = 0.8, seed =1)
+v_train <- v_dat[[1]]
+v_test <- v_dat[[2]]
+```
+Fit the GBM model using h2o.automl to do the grid and algorithm search, and get the best model.
+
+```sh
+v1 <- h2o.automl(y = dependent, 
+                 x = independent, 
+                 training_frame = v_train, 
+                 validation_frame = v_test,
+                 include_algos = c("GBM"),  # GBM model
+                 max_runtime_secs = 30, # maximum running time
+                 nfolds = 3, # number of K-folds cross-validations
+                 seed = 1) # set seed for reproducibility
+# Get top model 
+top_mod <- h2o.get_best_model(v1)
+```
+You can plot the partial dependent plots (PDP) and individual conditional expectation (ICE) plots for each predictor variable.
+
+```sh
+# For example plot PDP and ICE for density of major veins (VD_major)
+h2o.ice_plot(top_mod, newdata = v_train, column = "VD_major")
+```
+Below you can see PDP and ICE plots for all predictor variables.
+<!-- FIGURE 4 -->
+<br />
+<div align="left">
+  <a href="https://github.com/ilamatos/venation_tradeoffs">
+    <img src="figures/Figure2.png" alt="Broken_stick" width="700" height="900">
+  </a>
+
+<h3 align="left">Figure 3</h3>
+Partial dependence plots (PDP) and Individual Condition Expectation (ICE) plots for the marginal effect of the predictor variables: (a) VD major; (b) VD medium; (c) VD minor; (d) ER major; (e) ER medium; (f) ER minor; (g) MST major; (h) MST medium and (i) MST minor on the response variable Kleaf max. PDP shows the average effect, while ICE plots show the effect for each percentile. Original observation values are marked by semi-transparent circles on each ICE line. Gray bars show the distribution of each predictor variable.
 
 <!-- CONTACT -->
 ## Contact
