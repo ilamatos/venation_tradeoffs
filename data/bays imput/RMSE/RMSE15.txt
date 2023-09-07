@@ -1,0 +1,2 @@
+C:\Users\ilain\AppData\Local\Temp\Rtmpk9YvaM/BHPMFAuthorsTmp/fold1/Tunning 
+RMSE for the test data:  2.898304
