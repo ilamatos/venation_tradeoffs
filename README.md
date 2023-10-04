@@ -24,7 +24,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/ilamatos/venation_tradeoffs">
-    <img src="figures/Logo.png" alt="Logo" width="500" height="400">
+    <img src="figures/Logo.png" alt="Logo" width="500" height="500">
   </a>
 
 <h3 align="center">Leaf venation form versus function trade-offs</h3>
@@ -80,10 +80,11 @@
 ## About The Project
 Leaf venation networks may contribute to different functional axes: 
 
--(1) Damage resistance to drought: leaf ability to avoid water flow interruption due to xylem conduit implosion or due to the formation of air bubbles inside the conduits; -(2) Damage resistance to herbivory: leaf ability to avoid water flow disruption caused by herbivores cutting across the veins; 
--(3) Damage resilience to drought and herbivory: leaf capacity to maintain flow after drought- or herbivory-mediated damage has occurred;
--(4) Flow efficiency: how efficiently water flows through the leaf;
--(5) Mechanical support: leaf capacity to remain upright in space.
+* []()(1) Damage resistance to drought: leaf ability to avoid water flow interruption due to xylem conduit implosion or due to the formation of air bubbles inside the conduits;
+* []()(2) Damage resistance to herbivory: leaf ability to avoid water flow disruption caused by herbivores cutting across the veins; 
+* []()(3) Damage resilience to drought and herbivory: leaf capacity to maintain flow after drought- or herbivory-mediated damage has occurred;
+* []()(4) Flow efficiency: how efficiently water flows through the leaf;
+* []()(5) Mechanical support: leaf capacity to remain upright in space.
 
 All those functions must be traded off against the construction cost of the leaf. Due to biophysical and physiological constraints it might be impossible to construct a leaf network that simultaneously maximizes all those functions, while also minimizing costs (Blonder et al., 2020, 2018). Thus, plants may have found different solutions (i.e. different network forms) to maximize some functions to the detriment of others, depending on the selective forces under which they have evolved.
 
