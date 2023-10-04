@@ -237,7 +237,7 @@ screeplot(pca_all, main = "Screeplot of Wolf Predictor Variables with Broken Sti
 <br />
 <div align="left">
   <a href="https://github.com/ilamatos/venation_tradeoffs">
-    <img src="figures/Figure S7.png" alt="Broken_stick" width="900" height="700">
+    <img src="figures/Figure S7.png" alt="Broken_stick" width="1000" height="700">
   </a>
 
 <h3 align="left">Figure 2</h3>
@@ -387,7 +387,7 @@ shap_plot<-h2o.shap_summary_plot(top_mod, newdata = v_train)+
 <br />
 <div align="left">
   <a href="https://github.com/ilamatos/venation_tradeoffs">
-    <img src="figures/Figure 5.png" alt="Broken_stick" width="700" height="700">
+    <img src="figures/Figure 5.png" alt="Broken_stick" width="700" height="900">
   </a>
 
 <h3 align="left">Figure 5</h3>
@@ -428,7 +428,7 @@ Below we can see the strength of pairwise interactions between the predictor var
 <br />
 <div align="left">
   <a href="https://github.com/ilamatos/venation_tradeoffs">
-    <img src="figures/Figure 6.png" alt="Broken_stick" width="700" height="600">
+    <img src="figures/Figure 6.png" alt="Broken_stick" width="700" height="800">
   </a>
 
 <h3 align="left">Figure 6</h3>
