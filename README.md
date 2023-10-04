@@ -107,7 +107,7 @@ Alternatively, (H7) architectural versus functional relationships could be weak,
 <br />
 <div align="left">
   <a href="https://github.com/ilamatos/venation_tradeoffs">
-    <img src="figures/Figure 2.png" alt="Logo" width="800" height="700">
+    <img src="figures/Figure 2.png" alt="Logo" width="800" height="900">
   </a>
 
 <h3 align="left">Figure 1</h3>
