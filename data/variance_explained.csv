@@ -1,0 +1,27 @@
+Response variable,r2_train,status
+Kleaf_max,0.2150387,scaled
+P50,0.5706879,scaled
+P88,0.4549417,scaled
+SWP_M,0.6137725,scaled
+SWP_L,0.6094326,scaled
+SWS_M,0.1799052,scaled
+SWS_L,0.5842296,scaled
+Phe,0.2914963,scaled
+Dkleaf_mean,0.3046987,scaled
+LMA,0.6223187,scaled
+e_W,0.9337105,scaled
+e_L,0.9639689,scaled
+ISI,0.6160372,scaled
+Kleaf_max,0.1586896,unscaled
+P50,0.7732075,unscaled
+P88,0.4475277,unscaled
+SWP_M,0.1181124,unscaled
+SWP_L,0.7881151,unscaled
+SWS_M,0.2377971,unscaled
+SWS_L,0.5725391,unscaled
+Phe,0.6343518,unscaled
+Dkleaf_mean,0.3900674,unscaled
+LMA,0.5491625,unscaled
+e_W,0.9353244,unscaled
+e_L,0.9635502,unscaled
+ISI,0.5096941,unscaled
