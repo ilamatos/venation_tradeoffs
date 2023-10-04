@@ -237,7 +237,7 @@ screeplot(pca_all, main = "Screeplot of Wolf Predictor Variables with Broken Sti
 <br />
 <div align="left">
   <a href="https://github.com/ilamatos/venation_tradeoffs">
-    <img src="figures/FigureS7.png" alt="Broken_stick" width="900" height="700">
+    <img src="figures/Figure S7.png" alt="Broken_stick" width="900" height="700">
   </a>
 
 <h3 align="left">Figure 2</h3>
@@ -322,7 +322,7 @@ g_pca1<-ggarrange(g_pca_clade1, g_pca_rmin1,
 <br />
 <div align="left">
   <a href="https://github.com/ilamatos/venation_tradeoffs">
-    <img src="figures/Figure2.png" alt="Broken_stick" width="700" height="900">
+    <img src="figures/Figure 3.png" alt="Broken_stick" width="700" height="900">
   </a>
 
 <h3 align="left">Figure 3</h3>
@@ -337,7 +337,7 @@ Start the h2o cluster and import the leaf trait dataset.
 h2o.init() # start cluster
 
 # Import dataset
-venation_path <- "data/data_for_gbm.csv"
+venation_path <- "data/data_for_gbm_trans.csv"
 venation <- h2o.uploadFile(path = venation_path)
 ```
 Then, define the predictor and response variables.
@@ -367,29 +367,11 @@ v1 <- h2o.automl(y = dependent,
                  include_algos = c("GBM"),  # GBM model
                  max_runtime_secs = 30, # maximum running time
                  nfolds = 3, # number of K-folds cross-validations
-                 seed = 1) # set seed for reproducibility
+                 seed = 4) # set seed for reproducibility
 # Get top model 
 top_mod <- h2o.get_best_model(v1)
 ```
-You can plot the partial dependent plots (PDP) and individual conditional expectation (ICE) plots for each predictor variable.
-
-```sh
-# For example plot PDP and ICE for density of major veins (VD_major)
-h2o.ice_plot(top_mod, newdata = v_train, column = "VD_major")
-```
-
-Below you can see PDP and ICE plots for all predictor variables.
-<!-- FIGURE 4 -->
-<br />
-<div align="left">
-  <a href="https://github.com/ilamatos/venation_tradeoffs">
-    <img src="GBM outputs/PDP_ICE_Kleaf_max.png" alt="Broken_stick" width="700" height="900">
-  </a>
-
-<h3 align="left">Figure 4</h3>
-Partial dependence plots (PDP) and Individual Condition Expectation (ICE) plots for the marginal effect of the predictor variables: (a) VD major; (b) VD medium; (c) VD minor; (d) ER major; (e) ER medium; (f) ER minor; (g) MST major; (h) MST medium and (i) MST minor on the response variable Kleaf max. PDP shows the average effect, while ICE plots show the effect for each percentile. Original observation values are marked by semi-transparent circles on each ICE line. Gray bars show the distribution of each predictor variable.
-
-We can also visualize the SHAP summary plot.
+We can visualize the SHAP summary plot.
 
 ```sh
 # SHAP plot
@@ -405,11 +387,11 @@ shap_plot<-h2o.shap_summary_plot(top_mod, newdata = v_train)+
 <br />
 <div align="left">
   <a href="https://github.com/ilamatos/venation_tradeoffs">
-    <img src="GBM outputs/SHAP_Kleaf_max.png" alt="Broken_stick" width="700" height="700">
+    <img src="figures/Figure 5.png" alt="Broken_stick" width="700" height="700">
   </a>
 
 <h3 align="left">Figure 5</h3>
-SHapley Additive exPlanations (SHAP) summary plots for Kleafmax. SHAP summary plot shows the contribution of each predictor variable (leaf venation form traits: VDminor, VDmedium, VD major, MSTminor, MSTmedium, MSTmajor, ERminor, ERmedium, ERmajor, and plant clades) for each instance of the data (each of the 120 species). Each point on the summary plot is a SHAP value for a predictor variable and a species. The position on the y-axis is determined by the variable importance and on the x-axis by the SHAP contribution to the response variable (SHAP > 0 = response variable increases, SHAP < 0 = response variable decreases). The color represents the normalized value of the predictor variable from 0 (blue) to 1 (pink).  All effects describe the behavior of the model and are not necessarily causal in the real world.
+SHapley Additive exPlanations (SHAP) summary plots showing how vein density (VD), loop elongation ratio (ER), and minimum spanning tree ratio (MST) at three spatial scales (large, medium, and small) plus clade (predictor variables) influence 13 leaf functional traits (response variables): (a) P50; (b) P88; (c) ISI; (d) SWPmidrib; (e) SWPlamina; (f) SWSmidrib; (g) SWSlamina; (h) Phe; (i) 𝛥Kleafmean; (j) Kleafmax; (k) 𝜀whole; (l) 𝜀lamina; (m) LMA. SHAP measures the impact of predictor variables on the response variable taking into account the interactions between predictors. Each point in the SHAP summary plot represents a row from the original dataset.The y-axis indicates the predictor variable names: VDsmall, VDmedium, VDlarge, MSTsmall, MSTmedium, MSTlarge, ERsmall, ERmedium, ERlarge, and plant clades, in order of importance from top to bottom. The x-axis indicates the SHAP contribution value, i.e. by how much each predictor variable increases (SHAP > 0) or decreases (SHAP < 0) the response variable. The gradient color indicates the normalized value for the predictor variables, ranging from 0 (blue) to 1 (pink). For example, in panel (c) we can see that implosion safety is higher (more positive SHAP values) in networks with higher density of small veins (higher VDsmall indicated by points with pink color). Veins were classified in large, medium, and small classes based on their relative sizes (i.e. scaled rmin).
 
 Finally, we can use the R-package 'iml' to calculate the strength of the pairwise interactions between the predictor variables.
 
@@ -440,18 +422,17 @@ predictor.gbm <- Predictor$new(
 interact<- Interaction$new(predictor.gbm)
 ```
 
-In this example, we plot the interaction between vein density and minimum spanning tree ratio for medium size veins.
+Below we can see the strength of pairwise interactions between the predictor variables
 
 <!-- FIGURE 6 -->
 <br />
 <div align="left">
   <a href="https://github.com/ilamatos/venation_tradeoffs">
-    <img src="GBM outputs/Fig5c_Kleaf_max.png" alt="Broken_stick" width="700" height="600">
+    <img src="figures/Figure 6.png" alt="Broken_stick" width="700" height="600">
   </a>
 
 <h3 align="left">Figure 6</h3>
-Partial dependent co-plot for the pairwise interaction between density of medium size veins (VD_medium) and minimum spanning tree ratio of medium size veins (MST_medium) to determine Kleaf max.
-
+Strength of interactions between predictor variables (VDsmall, VDmedium, VDlarge, MSTsmall, MSTmedium, MSTlarge, ERsmall, ERmedium, ERlarge, and clade) to determine different leaf functions (response variables) when vein sizes were classified in large, medium, and small veins using (a) scaled rmin (i.e relative veins sizes) and (b) unscaled rmin (i.e. absolute vein sizes). Interaction strength (H-stastistic) ranges from 0 (no interaction) to 1 (strongest interaction). Partial dependent co-plots for the strongest (highest H-statistic) pairwise interactions for the models with (c) scaled rmin and (b) unscaled rmin .
 
 
 <!-- CONTACT -->
